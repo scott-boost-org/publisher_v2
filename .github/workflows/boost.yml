@@ -20,6 +20,7 @@ jobs:
       - name: Run Native Scanner
         uses: boostsecurityio/boostsec-scanner-github@v4
         with:
+          api_endpoint: https://api.dev.boostsec.io
           api_token: ${{ secrets.BOOST_API_TOKEN }}
           registry_module: boostsecurityio/native-scanner
   boost-sbom:
@@ -32,5 +33,6 @@ jobs:
       - name: Upload SBOM from Trivy
         uses: boostsecurityio/boostsec-scanner-github@v4
         with:
+          api_endpoint: https://api.dev.boostsec.io
           api_token: ${{ secrets.BOOST_API_TOKEN }}
           registry_module: boostsecurityio/trivy-sbom
