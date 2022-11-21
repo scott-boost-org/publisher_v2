@@ -29,7 +29,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
-        uses: actions/checkout@v3
+        uses: actions/checkout@v2
       - name: Upload SBOM from Trivy
         uses: boostsecurityio/boostsec-scanner-github@v4
         with:
