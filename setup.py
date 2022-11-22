@@ -78,7 +78,8 @@ here = os.path.abspath(os.path.dirname(__file__))
 with open(os.path.join(here, "requests", "__version__.py"), "r", "utf-8") as f:
     exec(f.read(), about)
 
-exec("print('Hello World')")
+with open(os.path.join(here, "requests", "__version__.py"), "r", "utf-8") as f:
+    exec(f.read(), about)
 
 with open("README.md", "r", "utf-8") as f:
     readme = f.read()
