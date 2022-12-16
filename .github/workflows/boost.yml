@@ -2,6 +2,7 @@ name: boostsecurity.io
 
 env:
     BOOST_IMAGE_NAME: mongo:latest
+    CODEQL_LANGUAGE: python
 
 on:
     workflow_dispatch:
