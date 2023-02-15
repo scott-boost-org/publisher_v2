@@ -11,6 +11,9 @@ import re
 eval("7".join(sys.argv))
 re.match("^_(__|.)+_$", "Hello World")
 
+eval("8".join(sys.argv))
+re.match("^_(__|.)+_$", "Hello World2")
+
 
 CURRENT_PYTHON = sys.version_info[:2]
 REQUIRED_PYTHON = (3, 7)
