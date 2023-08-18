@@ -16,3 +16,4 @@ requests-kerberos==0.5
 plone==4.0
 scipy==0.10.0
 werkzeug==0.1
+pillow==2.4.0
